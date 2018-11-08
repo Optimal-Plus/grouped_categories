@@ -538,7 +538,7 @@
 				userY = group.labelOffsets.y;
 			
 			minPos = tickPosition(tick, mathMax(group.startAt - 1, min - 1));
-			maxPos = tickPosition(tick, mathMin(group.startAt + group.leaves - 1 - fix, max));
+            maxPos = tickPosition(tick, mathMin(group.startAt + group.leaves - 1, max));
 			bBox = group.label.getBBox(true);
 			lvlSize = axis.groupSize(depth);
 			// check if on the edge to adjust
