@@ -393,7 +393,7 @@
 		}
 
 		// create elements for parent categories
-		if (axis.isGrouped && axis.options.labels.enabled) {
+		if (axis.isGrouped && (axis.options.labels.visible || JSON.parse(category.name).id == 1)) {
 			tick.addGroupedLabels(category);
 		}
 		return true;
